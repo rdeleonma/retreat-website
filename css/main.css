@@ -114,16 +114,20 @@ a{
 h2{
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  color: #e2e3ed;
+
 }
 
 h3, h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
-
+  color: #e2e3ed;
 }
 
 p{
-font-size: .875em;
+  font-size: .875em;
+  color: #e2e3ed;
+
 
 }
 
@@ -132,11 +136,14 @@ img{
 }
 
 figure{
+  color: #e2e3ed;
 
 }
 
 address{
   font-size: .875em;
+  color: #e2e3ed;
+
 }
 
 
@@ -148,6 +155,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header {
@@ -166,6 +174,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #202322;
 }
 
 header nav {
@@ -180,10 +189,17 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  list-style: none;
+  font-family: 'open sans', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 
 footer {
   flex-direction: column;
+  color: #e2e3ed;
+  text-align: center;
 }
 
 footer p {
@@ -197,6 +213,7 @@ footer .content-wrapper {
 
 footer .contact {
   margin-bottom: 50px;
+  font-style: normal;
 }
 
 footer .social-icons {
@@ -213,6 +230,10 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
+  color: #e2e3ed;
+  display: flex;
+  justify-content: center;
+
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -225,6 +246,12 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area h1{
+  font-size: 2.25em;
+  color: #e2e3ed;
+  margin-top: 70px;
+}
+
 /* Aside */
 
 aside {
@@ -232,6 +259,43 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  width: 100%;
+}
+
+aside .form{
+  margin-top: 30px;
+
+}
+
+aside .form .form-description h3{
+  margin: 0px;
+}
+
+aside .form .form-description{
+  line-height: 1.5em;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #9d9ea4;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -240,10 +304,6 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-
-.features h2 {
-  margin-bottom: 60px;
 }
 
 .features article {
@@ -260,7 +320,10 @@ aside {
 
 .features p {
   margin: 0;
+  color: #e2e3ed;
+  text-align: center;
 }
+
 
 /* Reviews */
 
@@ -270,13 +333,19 @@ aside {
   flex-flow: row wrap;
 }
 
+
+
 .reviews h2 {
   margin-bottom: 40px;
+  color: #e2e3ed;
+
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+  color: #e2e3ed;
+
 }
 
 /* ==========================================================================
@@ -299,6 +368,8 @@ aside {
 
 .contact-content p {
   margin: 0;
+  color: #e2e3ed;
+
 }
 
 /* ==========================================================================
