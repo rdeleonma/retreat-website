@@ -99,11 +99,14 @@ html{
 body{
   font-family: 'Open sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
 ol{
   font-size: 1.125em;
+  list-style-type: none;
 }
 
 a{
@@ -114,36 +117,34 @@ a{
 h2{
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
-  color: #e2e3ed;
+  font-weight: 500;
 
 }
 
 h3, h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
-  color: #e2e3ed;
+  font-weight: 500;
+  margin: 20px 0;
+  
 }
 
 p{
   font-size: .875em;
-  color: #e2e3ed;
-
-
+  line-height: 1.285;
 }
 
 img{
-
+  width: 100%;
 }
 
 figure{
-  color: #e2e3ed;
+  margin: 0;
 
 }
 
 address{
-  font-size: .875em;
-  color: #e2e3ed;
-
+  font-style: normal;
 }
 
 
@@ -170,6 +171,15 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
@@ -178,27 +188,29 @@ header .content-wrapper {
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  list-style: none;
-  font-family: 'open sans', sans-serif;
-  font-weight: bold;
+  width: 100%;  
   padding: 0;
-  margin: 0;
+}
+
+header nav ul li{
+  font-size: 1.125em;
 }
 
 footer {
   flex-direction: column;
-  color: #e2e3ed;
   text-align: center;
 }
 
@@ -230,10 +242,6 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
-  color: #e2e3ed;
-  display: flex;
-  justify-content: center;
-
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -244,12 +252,19 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/retreat_hero_image.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1{
   font-size: 2.25em;
-  color: #e2e3ed;
-  margin-top: 70px;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+
 }
 
 /* Aside */
@@ -260,7 +275,10 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
-  width: 100%;
+}
+
+aside .content-wrapper{
+  margin: 0 0 50px 0;
 }
 
 aside .form{
@@ -304,6 +322,12 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
+}
+
+.features .content-wrapper{
+  margin: 0;
 }
 
 .features article {
@@ -316,14 +340,18 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 50px 0;
+}
+
+.features h2{
+  margin-top: 1.66em;
+  margin-bottom: 1.66em;
 }
 
 .features p {
   margin: 0;
-  color: #e2e3ed;
   text-align: center;
 }
-
 
 /* Reviews */
 
@@ -331,21 +359,20 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
-
 
 
 .reviews h2 {
   margin-bottom: 40px;
-  color: #e2e3ed;
+  line-height: 1;
 
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
-  color: #e2e3ed;
-
+  
 }
 
 /* ==========================================================================
@@ -357,6 +384,8 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+
 }
 
 .contact-section {
@@ -364,12 +393,12 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+
 }
 
 .contact-content p {
   margin: 0;
-  color: #e2e3ed;
-
 }
 
 /* ==========================================================================
@@ -381,6 +410,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -493,10 +523,29 @@ input[type=button] {
 /* General styles */
 .content-wrapper {
   max-width: 640px;
-  margin: 100px 0;
+  margin: 50px 0;
 }
- 
-/* Header */
+
+h2{
+  font-size: 2.25em;
+
+}
+
+h3, h4{
+  font-size: 1.5em;
+
+}
+
+p{
+  font-size: .875em;
+
+}
+
+li{
+  font-size: 1em; 
+}
+
+/* Header Tablet Styles */
  
 header {
   justify-content: space-around;
@@ -507,6 +556,11 @@ header .content-wrapper {
   width: 100%;
   justify-content: space-between;
 }
+
+header figure{
+  width: 31%;
+  margin: 0;
+}
  
 header nav {
   width: 20%; 
@@ -514,17 +568,27 @@ header nav {
 }
  
 header nav ul {
-  justify-content: space-between;
-
-  }
+  justify-content: space-around;
+}
  
 .header-divider {
   display: none;
 }
  
-/* Hero Area */
- 
-/* Aside */
+/* Hero Area Tablet*/
+.hero-area{
+  min-height: 600px;
+}
+
+.hero-area h1{
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero-area .content-wrapper{
+ margin-top: 20px;
+}
+/* Aside Tablet*/
 aside .content-wrapper {
   margin: 50px  0;
   display: flex;
@@ -537,8 +601,8 @@ aside .content-wrapper .form {
   width: 40%;        
   margin: 0;
 }
- 
-/* Features */
+
+/* Features Tablet */
  
 .features article {
   display: flex;
@@ -552,22 +616,32 @@ aside .content-wrapper .form {
   width: 62%;
 }
  
-/* Reviews */
+/* Reviews Tablet */
+.reviews .content-wrapper{
+  flex-flow: row wrap;
+}
 .reviews article {
   display: flex;
   justify-content: space-between;
+  flex-flow: row nowrap;
+   margin-bottom: 50px;
 }
     
-.reviews article div {
-  display: flex;        
-  justify-content: space-between;
+.reviews h2{
+  width: 85%;
 }
 
+.reviews article figure,
 .reviews article div {
   width: 49%;
 }
+
+.reviews h3{
+  width: 75%;
+  margin: 0;
+}
  
-/* Footer */
+/* Footer Tablet */
 footer .content-wrapper {
   width: 65%;
   margin: 100px 0;
@@ -588,7 +662,7 @@ footer .copyright {
 }
 
 /*  ========================================================================
-    About Page 
+    About Page - Tablet
     ========================================================================
 */
 
@@ -614,7 +688,7 @@ footer .copyright {
 }
 
 /*  ========================================================================
-    FAQ Page 
+    FAQ Page - Tablet
     ========================================================================
 */
 
@@ -632,29 +706,61 @@ faq-content {
 
 .faq h2 {
   width: 100%;
+  font-size: 2.25em;
 }
 
 
 @media only screen and (min-width: 1200px) {
 /*Desktop Styles Here*/
+
+
+h3, h4{
+  font-size: 1.875em;
+
+}
+
+p, li{
+  font-size: 1.125em;
+  line-height: 1.5;
+
+}
+
+
 .content-wrapper {
   max-width: 960px;
 }
- /* Hero */
+
+header figure{
+  width: 24%;
+  margin: 0;
+}
+
+ /* Hero Desktop*/
  .hero-area h1 {
-  width: 60%;
+  width: 70%;
+  font-size: 3.75em;
  }
 
- /* Aside */
- aside .content-wrapper {
-  justify-content: space-between;
+ /* Aside Desktop */
+aside .content-wrapper {
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
  }
 
- aside .content-wrapper .form-description, aside .content-wrapper .form{
+aside .content-wrapper .form-description, aside .content-wrapper .form{
   width: 30%; 
  }
 
-/* Features */
+aside h3{
+  font-size: 1.875em;
+}
+
+aside p{
+  font-size: 1.125em;
+}
+
+/* Features Desktop */
 .features h2{
   width: 90%;
 }
@@ -663,12 +769,23 @@ faq-content {
   flex-basis: 33%;
 }
 
-/* Reviews */
+/* Reviews Desktop */
+
 .reviews article div{
-  width: 42%;
+  width: 49%;
+  padding-left: 37px;
 }
+
+.reviews h2 {
+  padding-bottom: 50px;
+}
+
+footer h4{
+  font-size: 1.875em;
+}
+
 /*  ========================================================================
-    About Page 
+    About Page - Desktop
     ========================================================================
 */
 
@@ -678,13 +795,16 @@ faq-content {
 }
 
 /*  ========================================================================
-    FAQ Page 
+    FAQ Page - Desktop 
     ========================================================================
 */
 
 .faq h2{
   width: 100%;
+  font-size: 3em;
 }
+
+
 
 
 /* ==========================================================================
