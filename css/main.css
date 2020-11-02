@@ -181,10 +181,10 @@ header figure{
 }
 
 .header-divider {
-  width: 100%;
+  background: #3a3a3a; 
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
-  background-color: #202322;
 }
 
 header nav {
@@ -253,12 +253,12 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
   background: url('../img/retreat_hero_image.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
   min-height: 500px;
 }
 
@@ -267,9 +267,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif; 
   font-weight: 500;
   line-height: 1.2;
-  margin: 0;
-
-}
+ }
 
 /* Aside */
 
